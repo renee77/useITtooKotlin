@@ -1,0 +1,7 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.useITtoo.SerializationKt.configureSerialization
+      - com.useITtoo.RoutingKt.configureRouting
