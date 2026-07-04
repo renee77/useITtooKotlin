@@ -1,0 +1,28 @@
+# EditorConfig — gedeelde opmaakbasis voor Kotlin/Ktor-projecten
+# root = true betekent: stop hier met zoeken. EditorConfig loopt normaal
+# vanaf het bewerkte bestand omhoog door de mappen tot het deze regel tegenkomt.
+# Zo weet je zeker dat een .editorconfig hogerop niet stiekem meepraat.
+root = true
+
+# Geldt voor alle bestandstypen in het project
+[*]
+charset = utf-8
+# lf = Unix-regeleindes. Dit is de belangrijkste teamregel: zonder dit
+# krijg je CRLF/LF-verschillen tussen machines, waardoor hele bestanden als
+# "gewijzigd" opduiken in je diff terwijl er inhoudelijk niets veranderde.
+end_of_line = lf
+# Elke file eindigt op precies één newline — voorkomt "no newline at end of file"-ruis
+insert_final_newline = true
+# Witruimte aan het eind van regels weghalen bij opslaan
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Alleen voor Kotlin-bestanden (.kt) en Kotlin-scripts (.kts, o.a. Gradle)
+[*.{kt,kts}]
+# 120 is de gangbare Kotlin-conventie voor de maximale regellengte
+max_line_length = 120
+
+# Voor later, zodra jullie ktlint teambreed invoeren. Nu doet deze regel niks;
+# IntelliJ negeert onbekende sleutels. Je breidt straks dus alleen uit, je gooit niks weg.
+# ktlint_code_style = ktlint_official
