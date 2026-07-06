@@ -7,6 +7,13 @@ build/
 .idea/
 *.iml
 
-# Besturingssysteem-rommel (Lonneke werkt misschien op Mac/Windows)
+# Besturingssysteem-rommel (Lonneke werkt op Windows)
 .DS_Store
 Thumbs.db
+
+# Wil mijn Claude-instellingen niet aan Lonneke opdringen
+CLAUDE.md
+
+# Locale settings horen niet op git .env.example krijgt de placeholders
+.env
+!.env.example
